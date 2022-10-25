@@ -39,7 +39,7 @@
 			"last 1 chrome version",
 			"last 1 firefox version",
 			"last 1 safari version"
-		],
-		"homepage": "https://bella-song.github.io/portfolio1/"
-	}
+		]
+	},
+  "homepage": "https://bella-song.github.io/portfolio1/"
 }
