@@ -1,0 +1,43 @@
+nav {
+	background: rgba(0, 0, 0, 0.1);
+	width: max-content;
+	display: block;
+	padding: 0.6rem 0.8rem;
+	z-index: 2;
+	position: fixed;
+	right: -2.3rem;
+	left: 78%;
+	transform: translateX(-50%);
+	top: 3.6rem;
+
+	display: flex;
+	gap: 1.4rem;
+	border-radius: 3rem;
+	backdrop-filter: blur(15px);
+}
+nav a {
+	background: transparent;
+	padding: 0.4rem;
+	border-radius: 50%;
+	display: flex;
+	color: var(--color-light);
+	font-size: 1.1rem;
+}
+nav a:hover {
+	background: rgba(0, 0, 0, 0.2);
+	color: var(--color-white);
+}
+nav a.active {
+	background: var(--color-bg);
+	color: var(--color-black);
+}
+
+/* media queries - medium */
+@media screen and (max-width: 1024px) {
+	nav {
+		top: auto;
+		bottom: 2rem;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}

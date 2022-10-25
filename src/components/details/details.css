@@ -1,0 +1,199 @@
+.detail {
+	display: grid;
+	grid-template-columns: 2fr;
+}
+.container.detail__container {
+	width: 60%;
+	height: 640px;
+	padding-bottom: 4rem;
+}
+
+.portfolio__detail {
+	position: relative;
+	width: 300px;
+	height: 230px;
+	aspect-ratio: 1/1;
+	overflow: hidden;
+	margin: 0 auto 1rem;
+	z-index: 10;
+	border-radius: 2rem;
+	border: 7px solid #ddbaba;
+	background: var(--color-bg-variant);
+	display: flex;
+	align-items: center;
+}
+span {
+	position: absolute;
+	top: 20px;
+	display: inline-block;
+	z-index: -1;
+	overflow: hidden;
+}
+.in1,
+.in3 {
+	top: 14px;
+	right: 26px;
+	width: 234px;
+	height: 140px;
+}
+.in5 {
+	top: 14px;
+	right: 26px;
+	width: 234px;
+	height: 170px;
+}
+
+.in4 {
+	top: 10px;
+	right: 26px;
+	width: 234px;
+	height: 140px;
+}
+.in2 {
+	top: 14px;
+	width: 91px;
+	height: 189px;
+	left: 99px;
+	background: #fff;
+}
+.in1 > img {
+	position: relative;
+	width: 100%;
+	animation: locknlock 10s linear infinite;
+}
+.in2 > img {
+	position: relative;
+	height: 100%;
+	width: 920px;
+	animation: kakao 7s linear infinite;
+}
+.in3 > img {
+	position: relative;
+	width: 100%;
+	animation: ss 4s linear infinite;
+}
+.in4 > img {
+	position: relative;
+	width: 100%;
+	animation: cj1 5s linear infinite;
+}
+.in5 > img {
+	position: relative;
+	width: 100%;
+}
+@keyframes locknlock {
+	0% {
+		top: 0;
+	}
+	5% {
+		top: 0;
+	}
+	50% {
+		top: -994px;
+	}
+	60% {
+		top: -994px;
+	}
+	95% {
+		top: 0;
+	}
+	100% {
+		top: 0;
+	}
+}
+@keyframes kakao {
+	0% {
+		left: 0;
+	}
+	5% {
+		left: 0;
+	}
+	50% {
+		left: -831px;
+	}
+	60% {
+		left: -831px;
+	}
+	95% {
+		left: 0;
+	}
+	100% {
+		left: 0;
+	}
+}
+@keyframes ss {
+	0% {
+		top: 0;
+	}
+	5% {
+		top: 0;
+	}
+	50% {
+		top: -342px;
+	}
+	60% {
+		top: -342px;
+	}
+	95% {
+		top: 0;
+	}
+	100% {
+		top: 0;
+	}
+}
+@keyframes cj1 {
+	0% {
+		top: 0;
+	}
+	5% {
+		top: 0;
+	}
+	50% {
+		top: -330px;
+	}
+	60% {
+		top: -330px;
+	}
+	95% {
+		top: 0;
+	}
+	100% {
+		top: 0;
+	}
+}
+.detail {
+	background: var(--color-primary-variant);
+	text-align: center;
+	padding: 2rem 2rem;
+	border-radius: 2rem;
+	user-select: none;
+}
+.detail > img {
+	height: 100%;
+	object-fit: contain;
+}
+.explain {
+	color: var(--color-light);
+	font-weight: 300;
+	display: block;
+	width: 80%;
+	margin: 0.4rem auto 1.2rem;
+}
+
+.swiper-pagination-clickable .swiper-pagination-bullet-active {
+	background: var(--color-primary);
+}
+
+/* media queries - medium */
+@media screen and (max-width: 1024px) {
+	.container.detail__container {
+		width: 90vw;
+	}
+}
+
+/* media queries - small*/
+@media screen and (max-width: 600px) {
+	.container.detail__container {
+		width: 90vw;
+	}
+}

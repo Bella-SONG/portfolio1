@@ -1,0 +1,174 @@
+.experience__container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 2rem;
+}
+.experience__container > div {
+	background: var(--color-bg-variant);
+	padding: 2.4rem 5rem;
+	border-radius: 2rem;
+	border: 1px solid transparent;
+}
+.experience__container > div:hover {
+	background: var(--color-primary-variant);
+
+	cursor: default;
+}
+.experience__container > div h3 {
+	text-align: center;
+	margin-bottom: 2rem;
+	color: var(--color-black);
+}
+.experience__content {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	row-gap: 2rem;
+}
+.experience__details {
+	display: flex;
+	gap: 1rem;
+}
+.experience__details-icon {
+	margin-top: 6px;
+	color: var(--color-primary);
+}
+.experience__graph:hover .p90 {
+	background: var(--color-black);
+	animation: skillup 0.5s linear forwards;
+}
+@keyframes skillup {
+	0% {
+		width: 0;
+	}
+	100% {
+		width: 27vw;
+	}
+}
+
+.experience__graph:hover .p70 {
+	background: var(--color-black);
+	animation: skillup2 0.5s linear forwards;
+}
+@keyframes skillup2 {
+	0% {
+		width: 0;
+	}
+	100% {
+		width: 21vw;
+	}
+}
+.experience__p {
+	display: flex;
+	gap: 1rem;
+	position: relative;
+	padding-bottom: 0.8rem;
+}
+.full {
+	width: 30vw;
+	height: 10px;
+	border: 2px solid var(--color-bg);
+	background: var(--color-bg);
+}
+.p90 {
+	position: absolute;
+	top: 27px;
+	width: 27vw;
+	height: 10px;
+	border: 2px solid var(--color-primary-variant);
+	background: var(--color-light);
+	opacity: 0.8;
+}
+
+.p70 {
+	position: absolute;
+	top: 27px;
+	width: 21vw;
+	height: 10px;
+	border: 2px solid var(--color-primary-variant);
+	background: var(--color-light);
+	opacity: 0.8;
+}
+/* media queries - medium */
+@media screen and (max-width: 1024px) {
+	.experience__container {
+		grid-template-columns: 1fr;
+	}
+	.experience__container > div {
+		width: 80%;
+		padding: 2rem;
+		margin: 0 auto;
+	}
+	.experience__content {
+		padding: 1rem;
+	}
+	.full {
+		width: 50vw;
+	}
+	.p90 {
+		width: 45vw;
+	}
+
+	.p70 {
+		width: 35vw;
+	}
+	@keyframes skillup {
+		0% {
+			width: 0;
+		}
+		100% {
+			width: 45vw;
+		}
+	}
+
+	@keyframes skillup2 {
+		0% {
+			width: 0;
+		}
+		100% {
+			width: 35vw;
+		}
+	}
+}
+
+/* media queries - small*/
+@media screen and (max-width: 600px) {
+	.experience__container {
+		grid-template-columns: 1fr;
+		gap: 1rem;
+	}
+	.experience__container > div {
+		width: 90%;
+		padding: 2rem 1rem;
+	}
+	.full {
+		width: 70vw;
+	}
+	.p90 {
+		width: 63vw;
+	}
+
+	.p70 {
+		width: 49vw;
+	}
+	@keyframes skillup {
+		0% {
+			width: 0;
+		}
+		100% {
+			width: 63vw;
+		}
+	}
+
+	.experience__graph:hover .p70 {
+		background: var(--color-black);
+		animation: skillup2 0.5s linear forwards;
+	}
+	@keyframes skillup2 {
+		0% {
+			width: 0;
+		}
+		100% {
+			width: 49vw;
+		}
+	}
+}
