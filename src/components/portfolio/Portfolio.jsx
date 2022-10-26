@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./portfolio.css";
 import IMG1 from "../../assets/pt2.png";
 import IMG2 from "../../assets/pt1.png";
@@ -6,6 +6,7 @@ import IMG3 from "../../assets/pt3.png";
 import IMG4 from "../../assets/pt4.png";
 import IMG5 from "../../assets/pt5.png";
 import IMG6 from "../../assets/pt6.png";
+import Modal from "react-modal";
 
 // const data = [
 // 	{
@@ -32,7 +33,16 @@ const Portfolio = () => {
 						<a href="#prev1" className="btn">
 							Detail
 						</a>
-						<a href="#" className="btn btn-primary">
+						<a
+							onClick={() =>
+								window.open(
+									"http://bella-song.github.io/locknlock",
+									"window_name",
+									"width=1280,height=720,location=no,status=no,scrollbars=yes"
+								)
+							}
+							className="btn btn-primary"
+						>
 							View
 						</a>
 					</div>
@@ -46,7 +56,16 @@ const Portfolio = () => {
 						<a href="#prev2" className="btn">
 							Detail
 						</a>
-						<a href="#" className="btn btn-primary">
+						<a
+							onClick={() =>
+								window.open(
+									"http://bella-song.github.io/react_kakao_2022",
+									"window_name",
+									"width=360,height=720,location=no,status=no,scrollbars=yes"
+								)
+							}
+							className="btn btn-primary"
+						>
 							View
 						</a>
 					</div>
@@ -60,7 +79,16 @@ const Portfolio = () => {
 						<a href="#prev3" className="btn">
 							Detail
 						</a>
-						<a href="#" className="btn btn-primary">
+						<a
+							onClick={() =>
+								window.open(
+									"http://bella-song.github.io/sse",
+									"window_name",
+									"width=1280,height=720,location=no,status=no,scrollbars=yes"
+								)
+							}
+							className="btn btn-primary"
+						>
 							View
 						</a>
 					</div>
@@ -74,7 +102,16 @@ const Portfolio = () => {
 						<a href="#prev4" className="btn">
 							Detail
 						</a>
-						<a href="#" className="btn btn-primary">
+						<a
+							onClick={() =>
+								window.open(
+									"http://bella-song.github.io/cj1",
+									"window_name",
+									"width=1280,height=720,location=no,status=no,scrollbars=yes"
+								)
+							}
+							className="btn btn-primary"
+						>
 							View
 						</a>
 					</div>
@@ -88,7 +125,16 @@ const Portfolio = () => {
 						<a href="#prev5" className="btn">
 							Detail
 						</a>
-						<a href="#" className="btn btn-primary">
+						<a
+							onClick={() =>
+								window.open(
+									"http://bella-song.github.io/momentum",
+									"window_name",
+									"width=1280,height=720,location=no,status=no,scrollbars=yes"
+								)
+							}
+							className="btn btn-primary"
+						>
 							View
 						</a>
 					</div>
@@ -102,7 +148,16 @@ const Portfolio = () => {
 						<a href="#prev6" className="btn">
 							Detail
 						</a>
-						<a href="#" className="btn btn-primary">
+						<a
+							onClick={() =>
+								window.open(
+									"http://bella-song.github.io/tetris",
+									"window_name",
+									"width=1280,height=720,location=no,status=no,scrollbars=yes"
+								)
+							}
+							className="btn btn-primary"
+						>
 							View
 						</a>
 					</div>

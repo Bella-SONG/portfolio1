@@ -46,6 +46,11 @@
 .img6 {
 	/* transform: rotate(30deg) scale(1.4); */
 }
+
+button {
+	position: relative;
+	z-index: 10 !important;
+}
 /* media queries - medium */
 @media screen and (max-width: 1024px) {
 	.portfolio__container {
