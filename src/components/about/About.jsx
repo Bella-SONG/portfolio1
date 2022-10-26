@@ -41,7 +41,10 @@ const About = () => {
 							<VscFolderLibrary className="about__icon" />
 							<h5>ENTP</h5>
 							<small>mbti</small>
-							<h6>Music, Cooking, illustrating, Study Languages</h6>
+							<h6>
+								Music, Art, Drawing, Cooking, illustrating, Study Languages,
+								Media Art, Youtube
+							</h6>
 							<small>What i love</small>
 						</article>
 					</div>

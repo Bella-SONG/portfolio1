@@ -30,7 +30,8 @@
 	transform: scale(1.1);
 }
 .portfolio__item:hover .img6 {
-	transform: rotate(30deg) scale(1.5);
+	/* transform: rotate(360deg) scale(1.5); */
+	/* transition: all 0.4s linear 0s; */
 }
 .portfolio__item h3 {
 	margin: 1.2rem 0 2rem;
@@ -43,7 +44,7 @@
 	justify-content: center;
 }
 .img6 {
-	transform: rotate(30deg) scale(1.4);
+	/* transform: rotate(30deg) scale(1.4); */
 }
 /* media queries - medium */
 @media screen and (max-width: 1024px) {

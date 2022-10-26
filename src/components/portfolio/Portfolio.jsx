@@ -97,16 +97,13 @@ const Portfolio = () => {
 					<div className="portfolio__item-image">
 						<img src={IMG6} alt="portfolio6" className="img6" />
 					</div>
-					<h3>App Coding</h3>
+					<h3>Tetris</h3>
 					<div className="portfolio__item-cta">
 						<a href="#prev6" className="btn">
 							Detail
 						</a>
 						<a href="#" className="btn btn-primary">
 							View
-						</a>
-						<a href="#" className="btn">
-							Landing Page
 						</a>
 					</div>
 				</article>
